@@ -8,7 +8,7 @@ README = (cwd / "README.md").read_text()
 dependencies = (cwd / "requirements.txt").read_text().strip().split("\n")
 
 # This should be set by the automated Github workflow
-VERSION = environ["SEMANTIC_VERSION"] or "1.0.0"
+VERSION = environ["SEMANTIC_VERSION"] if "SEMANTIC_VERSION" in environ else "1.0.0"
 
 setup(
     name="cli-xkcd",
