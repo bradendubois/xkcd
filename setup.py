@@ -11,7 +11,7 @@ dependencies = (cwd / "requirements.txt").read_text().strip().split("\n")
 VERSION = environ["SEMANTIC_VERSION"] or "1.0.0"
 
 setup(
-    name="xkcd-cli",
+    name="cli-xkcd",
     version=VERSION,
     description="See the daily xkcd comic from your terminal.",
     long_description=README,
